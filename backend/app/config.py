@@ -3,7 +3,8 @@ from typing import Optional
 from pydantic_settings import BaseSettings
 from dotenv import load_dotenv
 
-load_dotenv()
+# 从当前文件所在目录(app目录)加载.env文件
+load_dotenv(os.path.join(os.path.dirname(__file__), '.env'))
 
 class Settings(BaseSettings):
     # DeepSeek配置

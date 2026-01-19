@@ -31,6 +31,7 @@
 
 <script setup>
 import { computed } from 'vue'
+import { ElMessage } from 'element-plus'
 import { useChatStore } from '@/stores/chat.ts'
 import { ChatLineRound, Plus } from '@element-plus/icons-vue'
 
